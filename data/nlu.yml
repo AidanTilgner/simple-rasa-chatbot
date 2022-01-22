@@ -1,0 +1,43 @@
+version: "3.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Ciao
+      - Hello there!
+      - Good morning
+      - Good evening
+      - Good afternoon
+
+  - intent: inquire_feelings
+    examples: |
+      - How are you?
+      - How are you feeling?
+      - Are you feeling ok?
+      - How are you feeling today?
+
+  - intent: describe_feelings-positive
+    examples: |
+      - I am doing well
+      - I am great
+      - I am feeling amazing
+      - I feel amazing
+      - I feel great
+      - I am feeling like a million bucks
+
+  - intent: describe_feelings-negative
+    examples: |
+      - I'm not doing so great.
+      - I don't feel very happy
+      - I'm sad
+      - I'm distraught
+
+  - intent: valediction
+    examples: |
+      - Goodbye
+      - Bye
+      - Adios
+      - Arrivederci
+      - See ya!

@@ -1,0 +1,51 @@
+version: "3.0"
+
+intents:
+  - greet
+  - inquire_feelings
+  - describe_feelings-positive
+  - describe_feelings-negative
+  - valediction
+
+responses:
+  utter_greet:
+    - text: |
+        Hello! How are you!
+    - text: |
+        Hey there, how are you?
+    - text: |
+        Hi, how are you feeling today?
+
+  utter_describe-feelings:
+    - text: |
+        I'm doing well, how about you?
+    - text: |
+        I'm feeling well, you?
+
+  utter_reinforce-positive-feelings:
+    - text: |
+        I'm glad you're doing well, that's great!
+    - text: |
+        That's awesome! Glad to hear it.
+    - text: |
+        Happy to hear that.
+
+  utter_dissipate-negative-feelings:
+    - text: |
+        I'm sorry to hear that, but it'll all get better.
+    - text: |
+        That sucks, better luck next time though.
+    - text: |
+        I'm sorry you feel that way, I'm here for you.
+
+  utter_valediction:
+    - text: |
+        Goodbye!
+    - text: |
+        Nice talking to you!
+    - text: |
+        Talk to me again soon!
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

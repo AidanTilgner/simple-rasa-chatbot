@@ -1,0 +1,23 @@
+version: "3.0"
+stories:
+  - story: User was happy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: inquire_feelings
+      - action: utter_describe-feelings
+      - intent: describe_feelings-positive
+      - action: utter_reinforce-positive-feelings
+      - intent: valediction
+      - action: utter_valediction
+
+  - story: User was sad
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: inquire_feelings
+      - action: utter_describe-feelings
+      - intent: describe_feelings-negative
+      - action: utter_dissipate-negative-feelings
+      - intent: valediction
+      - action: utter_valediction
